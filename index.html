@@ -724,6 +724,13 @@
       .day-header { display: none; }
       .day-section { padding-top: 36px; }
 
+      /* Pull footer back to span the full main width so text-align: center works
+         relative to the whole page, not just the offset content column */
+      footer {
+        margin-left: -312px;
+        margin-right: -52px;
+      }
+
       /* Scale up activity elements to fill the wider column */
       .activity {
         grid-template-columns: 92px 1fr;
